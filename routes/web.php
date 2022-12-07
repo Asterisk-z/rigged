@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\Admin\Dashboard;
 use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\User\Dashboard as UserDashboard;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -46,3 +48,10 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 require __DIR__.'/auth.php';
+
+
+
+Route::get('/admin/dashboard', [Dashboard::class, 'index'])->name('admin.dash');
+
+
+Route::get('/user/dashboard', [UserDashboard::class, 'index'])->name('user.dash');
