@@ -14,7 +14,7 @@
                         <div class="mt-4">
                             <h2 class="text-2xl font-semibold text-slate-600 dark:text-navy-100">
                                 Welcome
-                            </h2>                        
+                            </h2>
                         </div>
                     </div>
 
@@ -23,7 +23,7 @@
                 </div>
             </main>
         </div>
-         
+
     </div>
 </template>
 

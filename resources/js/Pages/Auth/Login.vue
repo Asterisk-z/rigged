@@ -7,7 +7,7 @@
         <form  @submit.prevent="submit">
             <div class="card mt-5 rounded-lg p-5 lg:p-7">
                 <label class="block">
-                    <span>Username:</span>
+                    <span>Email Address:</span>
                     <span class="relative mt-1.5 flex">
                         <input
                             class="form-input peer w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 pl-9 placeholder:text-slate-400/70 hover:z-10 hover:border-slate-400 focus:z-10 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
@@ -57,9 +57,9 @@
                     class="btn mt-5 w-full bg-primary font-medium text-white hover:bg-primary-focus focus:bg-primary-focus active:bg-primary-focus/90 dark:bg-accent dark:hover:bg-accent-focus dark:focus:bg-accent-focus dark:active:bg-accent/90"  :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
                     Login
                 </button>
-            </div>                        
+            </div>
         </form>
-        
+
     </GuestLayout>
 
 </template>
